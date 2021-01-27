@@ -14,6 +14,7 @@ set tabstop=4							" Sane tabsizes
 set shiftwidth=4
 set foldmethod=indent					" Folding
 set foldlevel=99
+set showtabline=2 						" Always display tab names at top
 
 au BufNewFile,BufRead *.py				" Python PEP8 Indentation
     \ set tabstop=4
