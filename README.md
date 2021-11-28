@@ -36,7 +36,10 @@ To auto install Vim Plug if not present
     python -m pip install --user --upgrade pynvim
     ```
 - nodejs >= 10.12 for COC Plugin
-- COC Extensions
+    <br/>e.g. 17.1.0:
     ```
-    nvim -c 'CocInstall -sync coc-snippets coc-pairs coc-prettier coc-json coc-java coc-python coc-yaml|q'
+    cinst -y nvm
+    nvm install latest
+    nvm use 17.1.0
     ```
+- LSP<br/>See [list of language servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)

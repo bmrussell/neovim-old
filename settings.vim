@@ -1,4 +1,16 @@
-" Settings ----------------------------------------------------------------
+" THEMES ---------------------------------------------------------------------
+set t_Co=256
+set t_ut=
+let g:lightline = {'colorscheme': 'dracula'}
+colorscheme dracula
+
+"let g:dracula_colorterm = 1
+"let g:dracula_underline = 1
+"let g:lightline = {'colorscheme': 'wombat'}
+
+"colorscheme codedark
+
+" Vim CUSTOMISATION-----------------------------------------------------------
 
 set nocompatible						" Don't care about vi
 syntax on								" Turn on syntax highlighting.
@@ -15,23 +27,6 @@ set shiftwidth=4
 set foldmethod=indent					" Folding
 set foldlevel=99
 set showtabline=2 						" Always display tab names at top
-
-au BufNewFile,BufRead *.py				" Python PEP8 Indentation
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-au BufNewFile,BufRead *.js, *.html, *.css " Web indentation
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
-
-
-
 set noerrorbells visualbell t_vb=		" Disable audible bell because it's annoying.
 set mouse+=a							" Enable mouse support
 set nowrap								" Turn off screen wrap
@@ -44,7 +39,9 @@ set wildmenu
 filetype plugin on
 
 
-										" Change directory to opened file. Prevents NerdTree opening in system32 on windows
-										" https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
+" Change directory to opened file. Prevents NerdTree opening in system32 on windows
+" https://vim.fandom.com/wiki/Set_working_directory_to_the_current_file
 set autochdir
 autocmd BufEnter *lcd %:p:h
+
+

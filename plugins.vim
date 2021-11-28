@@ -9,48 +9,22 @@ endif
 
 call plug#begin(g:nvim_config_root . '/plugged')
 
-" Plugins in increasing order of complexity :)
+" --- Active ------------------------------------------------------------------------------------------
+Plug 'tomasiser/vim-code-dark'							" Vscode Theme https://github.com/tomasiser/vim-code-dark
+Plug 'dracula/vim', { 'as': 'dracula' }					" Dracula Theme https://github.com/dracula/vim
+Plug 'itchyny/lightline.vim'							" Posh Statusline https://github.com/itchyny/lightline.vim
+Plug 'preservim/nerdtree'								" Nerdtree File Explorer https://github.com/preservim/nerdtree
+Plug 'Xuyuanp/nerdtree-git-plugin' 						" Git marks & syntax in nerdtree https://github.com/Xuyuanp/nerdtree-git-plugin
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'			" Nerd Tree Syntax Highlight https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+Plug 'neovim/nvim-lspconfig'							" LSP https://github.com/neovim/nvim-lspconfig
+Plug 'hrsh7th/nvim-compe'								" LSP Completer https://github.com/hrsh7th/nvim-compe
 
-														" https://github.com/dracula/vim
-														" Dracula Theme
-Plug 'dracula/vim', { 'as': 'dracula' }				
-
-														" https://github.com/tomasiser/vim-code-dark
-														" Vscode Theme
-Plug 'tomasiser/vim-code-dark'
-
-														" Posh Statusline
-														" https://github.com/itchyny/lightline.vim
-Plug 'itchyny/lightline.vim'
-
-														" Powershell Support
-														" https://github.com/pprovost/vim-ps1
-Plug 'pprovost/vim-ps1'
-
-														" File Exporer
-														" https://github.com/preservim/nerdtree
-Plug 'preservim/nerdtree'
-														" Git marks & syntax in nerdtree
-														" https://github.com/Xuyuanp/nerdtree-git-plugin
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
-														" Nerd Tree Syntax Highlight
-														" https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-														" CoC
-														" https://github.com/neoclide/coc.nvim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+" --- Unused ------------------------------------------------------------------------------------------
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}		" CoC https://github.com/neoclide/coc.nvim
 "Plug 'ctrlpvim/ctrlp.vim'  							" https://github.com/ctrlpvim/ctrlp.vim  			fuzzy find files
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }	" https://github.com/junegunn/fzf					fuzzy finder
+"Plug 'pprovost/vim-ps1' 								" Powershell Support https://github.com/pprovost/vim-ps1
+" -----------------------------------------------------------------------------------------------------
 
-"Plug 'tmhedberg/SimpylFold'
-"Plug ' vim-scripts/indentpython.vim'
-
-
-" OmniSharp for C#
-"Plug 'OmniSharp/omnisharp-vim'
-"Plug 'w0rp/ale'
 
 call plug#end()

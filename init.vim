@@ -21,12 +21,6 @@
 
 let g:nvim_config_root = stdpath('config')
 
-"if has('win32')
-"  let g:nvim_config_root = stdpath('config')
-"else
-"  let g:nvim_config_root = '~/.config/nvim'
-"endif
-
 " Dependencies ---------------------------------------------------------------
 " 
 " 1. CURL
@@ -38,25 +32,30 @@ let g:nvim_config_root = stdpath('config')
 " 
 "
 
-
 set encoding=utf-8
 
 " Modularised configs----------------------------------------------------------
 
-let g:config_file_list = [
-\ 'settings.vim'
-\ ,'plugins.vim'
-\ ,'themes.vim'
-\ ,'gui.vim'
-\ ,'nerdtree.vim'
-\ ,'coc.vim'
-\ ,'mappings.vim'
+let g:vim_config_list = [
+\  'plugins.vim'
+\ ,'settings.vim'
+\ ,'lsp-config.vim'
 \ ]
 
-
-"\ ,'ctrlp.vim'
-"\ ,'omnisharp.vim'
-
-for f in g:config_file_list
+for f in g:vim_config_list
     execute 'source ' . g:nvim_config_root . '/' . f
+endfor
+
+
+" LUA ---------------------------------------------------------------------
+" npm i -g pyright vscode-json-languageserver-bin yaml-language-server
+let g:lua_config_list = [
+\  'compe-config.lua'
+\ ,'lsp-languages.lua'
+"\ ,''
+"\ ,''
+\ ]
+
+for f in g:lua_config_list
+	execute 'luafile ' . g:nvim_config_root . '\lua\' . f
 endfor
