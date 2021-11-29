@@ -47,12 +47,12 @@ for f in g:vim_config_list
 endfor
 
 
+
 " LUA ---------------------------------------------------------------------
 " npm i -g pyright vscode-json-languageserver-bin yaml-language-server
 let g:lua_config_list = [
-\  'compe-config.lua'
-\ ,'lsp-languages.lua'
-"\ ,''
+\  'cmp-config.lua'
+\ ,'cmp-mapping.lua'
 "\ ,''
 \ ]
 

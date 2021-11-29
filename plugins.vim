@@ -17,7 +17,16 @@ Plug 'preservim/nerdtree'								" Nerdtree File Explorer https://github.com/pre
 Plug 'Xuyuanp/nerdtree-git-plugin' 						" Git marks & syntax in nerdtree https://github.com/Xuyuanp/nerdtree-git-plugin
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'			" Nerd Tree Syntax Highlight https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
 Plug 'neovim/nvim-lspconfig'							" LSP https://github.com/neovim/nvim-lspconfig
-Plug 'hrsh7th/nvim-compe'								" LSP Completer https://github.com/hrsh7th/nvim-compe
+"Plug 'hrsh7th/nvim-compe'								" (deprecated) LSP Completer https://github.com/hrsh7th/nvim-compe
+
+Plug 'hrsh7th/nvim-cmp' 								" LSP Completer https://github.com/hrsh7th/nvim-cmp
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 
 " --- Unused ------------------------------------------------------------------------------------------
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}		" CoC https://github.com/neoclide/coc.nvim
