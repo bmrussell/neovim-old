@@ -27,6 +27,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'lithammer/nvim-pylance' 							" Pylance for LSP https://github.com/lithammer/nvim-pylance/blob/master/README.md
 
 " --- Unused ------------------------------------------------------------------------------------------
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}		" CoC https://github.com/neoclide/coc.nvim

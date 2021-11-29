@@ -63,4 +63,5 @@ require'lspconfig'.powershell_es.setup{
   shell = 'powershell.exe',
 }
 
-
+local lspconfig = require('lspconfig')
+local pylance = require('pylance').setup{cmd = {'pyright-langserver', '--stdio'}}

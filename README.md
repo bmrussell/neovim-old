@@ -48,6 +48,8 @@ To auto install Vim Plug if not present
 	```
 	npm i -g yaml-language-server
 	npm i -g vscode-json-languageserver-bin
+    npm i -g vscode-langservers-extracted
+    npm i -g yaml-language-server
 	npm i -g pyright
 	```
 
