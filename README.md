@@ -43,3 +43,11 @@ To auto install Vim Plug if not present
     nvm use 17.1.0
     ```
 - LSP<br/>See [list of language servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
+
+- LSP Language Servers
+	```
+	npm i -g yaml-language-server
+	npm i -g vscode-json-languageserver-bin
+	npm i -g pyright
+	```
+

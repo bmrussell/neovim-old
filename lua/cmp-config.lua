@@ -58,6 +58,7 @@ require'lspconfig'.bashls.setup{capabilities = capabilities}
 require'lspconfig'.jsonls.setup{capabilities = capabilities}
 require'lspconfig'.yamlls.setup{capabilities = capabilities}
 require'lspconfig'.powershell_es.setup{	
+  capabilities = capabilities,
   bundle_path = vim.fn.stdpath('config') .. '/PowerShellEditorServices',
   shell = 'powershell.exe',
 }
