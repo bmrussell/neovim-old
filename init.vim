@@ -57,5 +57,5 @@ let g:lua_config_list = [
 \ ]
 
 for f in g:lua_config_list
-	execute 'luafile ' . g:nvim_config_root . '\lua\' . f
+	execute 'luafile ' . g:nvim_config_root . '/lua/' . f
 endfor
